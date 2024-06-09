@@ -1,0 +1,293 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+#intro
+{
+    display: block;
+}
+#introducao
+{
+    background-image: url('./img/introduçao.png');
+    position: relative;
+    top: 0%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+
+.div
+{
+    
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(148, 143, 143);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    display: none;
+   
+}
+
+
+#allbuttons
+{
+    width: 30%;
+    height: 5%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    font-size: 100%;
+    gap: 5%;
+    color: white;
+}
+
+.ex
+{
+    position: absolute;
+    height: 45%;
+    width: 15%;
+}
+#exa5
+{
+    left: 75%;
+    top: 3%;
+    background-color:  red;
+    background-image: url("./img/marion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#exa4
+{
+    top: 3%;
+    left: 45%;
+    background-color:  rgb(37, 181, 54);
+    background-image: url("./img/maurrem.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#exa3
+{
+    top: 3%;
+    left: 10%;
+    background-color:  rgb(35, 55, 100);
+    background-image: url("./img/br.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#exa2
+{
+    top: 52%;
+    left: 75%;
+    background-color:  rgb(214, 17, 96);
+    background-image: url("./img/giba.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#exa1
+{
+    background-color:  rgb(187, 0, 255);
+    top: 52%;
+    left: 45%;
+    background-image: url("./img/lance.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#exa
+{
+    top: 52%;
+    left: 10%;
+    background-image: url("./img/cielo.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.textocasos
+{
+    color: white;
+    height: 200%;
+    width: 455%;
+    display: none;
+    left: 125%;
+    top: 0%;
+    box-shadow: 0 0 10px rgb(148, 143, 143);
+    position: absolute;
+}
+
+
+#nome5
+{
+    background-image: url('./img/maurremfoto.jpeg');
+    height: 100%;
+
+    left: 0%;
+    position: relative;
+    top: 0%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#nome4
+{
+    background-image: url('./img/cesarcielo.png');
+    height: 100%;
+
+    left: 0%;
+    position: relative;
+    top: 0%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#nome2
+{
+    background-image: url('./img/benfoto.jpeg');
+    height: 100%;
+    left: 0%;
+    position: relative;
+    top: 3%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#nome3
+{
+    background-image: url('./img/gibafoto.jpeg');
+    height: 100%;
+    left: 0%;
+    position: relative;
+    top: 5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#nome6
+{
+    background-image: url('./img/marionfoto.jpeg');
+    height: 100%;
+    left: 0%;
+    position: relative;
+    top: 0%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#nome1
+{
+    background-image: url('./img/lancefoto.jpeg');
+    height: 100%;
+    left: 0%;
+
+    position: relative;
+    top: 0%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#doping
+{
+    color: white;
+}
+#grupo
+{
+
+    font-size: 200%;
+    left: 10%;
+}
+#outros
+{
+    left: 2%;
+    position: absolute;
+    top: 95%;
+}
+#mhm
+{
+    left: 2%;
+    position: absolute;
+    top: 76%;
+}
+#g
+{
+    left: 2%;
+    position: absolute;
+    top: 57%;  
+}
+#dm
+{
+    left: 2%;
+    position: absolute;
+    top: 38%;   
+}
+#est
+{
+    left: 2%;
+    position: absolute;
+    top: 19%; 
+}
+#ag
+{
+    left: 2%;
+    position: absolute;
+    top: 0%;  
+    
+}
+.esteroides
+{
+    height: 2100%;
+    top: 1050%;
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(148, 143, 143);
+}
+
+#agtxt
+{
+    width: 650%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+#esttxt
+{
+    width: 950%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+}
+#dmtxt
+{
+    width: 460%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#gtxt
+{
+    width: 740%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+#mhmtxt
+{
+    width: 320%;
+    left: 34%;
+    transform: translate(-50%,-50%);
+}
+#outrostxt
+{
+    width: 1820%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+}
