@@ -13,7 +13,7 @@ body{
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
 }
 
 
@@ -257,9 +257,13 @@ body{
 
 #agtxt
 {
+    background-image: url('./img/esteroides.jpeg');
     width: 650%;
     left: 75%;
     transform: translate(-50%,-50%);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #esttxt
 {
@@ -275,6 +279,7 @@ body{
 }
 #gtxt
 {
+    
     width: 740%;
     left: 80%;
     transform: translate(-50%,-50%);
@@ -290,4 +295,12 @@ body{
     width: 1820%;
     left: 95%;
     transform: translate(-50%,-50%);
+}
+#regras
+{
+    background-image: url('./img/regras.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
 }
