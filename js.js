@@ -447,7 +447,7 @@ var outrostxt = document.getElementById('outrostxt')
                 g.style.display = 'block'
                 dm.style.display = 'block'
                 mhm.style.display = 'block'
-outrostxt.style.display = 'none'
+        outrostxt.style.display = 'none'
                 outros.style.left = '2%'
                 outros.style.top = '95%'
             }
