@@ -267,31 +267,54 @@ body{
     width: 950%;
     left: 100%;
     transform: translate(-50%,-50%);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./img/est.jpeg');
 }
 #dmtxt
 {
     width: 460%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./img/dm.jpeg');
+    top: 1000%;
 }
+
 #gtxt
 {
     
     width: 740%;
     left: 80%;
     transform: translate(-50%,-50%);
+        background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./img/glico.jpeg');
 }
 #mhmtxt
 {
     width: 320%;
     left: 34%;
     transform: translate(-50%,-50%);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./img/mh.jpeg');
 }
 #outrostxt
 {
     width: 1820%;
     left: 95%;
     transform: translate(-50%,-50%);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./img/outros.jpeg');
+    top: 500%;
 }
 #regras
 {
@@ -300,4 +323,12 @@ body{
     background-position: center;
     background-size: 100%;
 
+}
+#detec
+{
+    background-image: url('./img/detesc.jpeg');
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
