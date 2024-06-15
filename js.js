@@ -280,6 +280,10 @@ caso5.style.display = 'block'
        var g= document.getElementById("g")
        var mhm= document.getElementById("mhm")
        var outros= document.getElementById("outros")
+        var graph = document.getElementById("sumirgraph")
+
+
+
 var yat = 0
 
 var agtxt = document.getElementById('agtxt')
@@ -297,6 +301,7 @@ var outrostxt = document.getElementById('outrostxt')
                 g.style.display = 'none'
                 mhm.style.display = 'none'
                 outros.style.display = 'none'
+                graph.style.display = 'none'
                 agtxt.style.display = 'block'
                 ag.style.left = '40%'
                 ag.style.top = '5%'
@@ -309,6 +314,7 @@ var outrostxt = document.getElementById('outrostxt')
                 g.style.display = 'block'
                 mhm.style.display = 'block'
                 outros.style.display = 'block'
+                graph.style.display = 'block'
                 agtxt.style.display = 'none'
                 ag.style.left = '2%'
                 ag.style.top = '0%'
@@ -324,6 +330,7 @@ var outrostxt = document.getElementById('outrostxt')
                 mhm.style.display = 'none'
                 outros.style.display = 'none'
                 esttxt.style.display = 'block'
+                graph.style.display = 'none'
                 est.style.left = '40%'
                 est.style.top = '5%'
 
@@ -336,6 +343,7 @@ var outrostxt = document.getElementById('outrostxt')
                 mhm.style.display = 'block'
                 outros.style.display = 'block'
                 esttxt.style.display = 'none'
+                graph.style.display = 'block'
                 est.style.left = '2%'
                 est.style.top = '19%'
             }
@@ -355,6 +363,7 @@ var outrostxt = document.getElementById('outrostxt')
                 mhm.style.display = 'none'
                 outros.style.display = 'none'
                 dmtxt.style.display = 'block'
+                graph.style.display = 'none'
                 dm.style.left = '40%'
                 dm.style.top = '5%'
 
@@ -367,6 +376,7 @@ var outrostxt = document.getElementById('outrostxt')
                 mhm.style.display = 'block'
                 outros.style.display = 'block'
                 dmtxt.style.display = 'none'
+                graph.style.display = 'block'
                 dm.style.left = '2%'
                 dm.style.top = '38%'
             }
@@ -381,6 +391,7 @@ var outrostxt = document.getElementById('outrostxt')
                 dm.style.display = 'none'
                 mhm.style.display = 'none'
                 outros.style.display = 'none'
+                graph.style.display = 'none'
                 gtxt.style.display = 'block'
                 g.style.left = '40%'
                 g.style.top = '5%'
@@ -393,6 +404,7 @@ var outrostxt = document.getElementById('outrostxt')
                 dm.style.display = 'block'
                 mhm.style.display = 'block'
                 outros.style.display = 'block'
+                graph.style.display = 'block'
                 gtxt.style.display = 'none'
                 g.style.left = '2%'
                 g.style.top = '57%'
@@ -409,6 +421,7 @@ var outrostxt = document.getElementById('outrostxt')
                 dm.style.display = 'none'
                 outros.style.display = 'none'
                 mhmtxt.style.display = 'block'
+                graph.style.display = 'none'
                 mhm.style.left = '40%'
                 mhm.style.top = '5%'
 
@@ -420,6 +433,7 @@ var outrostxt = document.getElementById('outrostxt')
                 g.style.display = 'block'
                 dm.style.display = 'block'
                 outros.style.display = 'block'
+                graph.style.display = 'block'
                 mhmtxt.style.display = 'none'
                 mhm.style.left = '2%'
                 mhm.style.top = '76%'
@@ -435,6 +449,7 @@ var outrostxt = document.getElementById('outrostxt')
                 g.style.display = 'none'
                 dm.style.display = 'none'
                 mhm.style.display = 'none'
+                graph.style.display = 'none'
                 outrostxt.style.display = 'block'
                 outros.style.left = '45%'
                 outros.style.top = '5%'
@@ -447,6 +462,7 @@ var outrostxt = document.getElementById('outrostxt')
                 g.style.display = 'block'
                 dm.style.display = 'block'
                 mhm.style.display = 'block'
+                graph.style.display = 'block'
         outrostxt.style.display = 'none'
                 outros.style.left = '2%'
                 outros.style.top = '95%'
@@ -472,4 +488,76 @@ var outrostxt = document.getElementById('outrostxt')
 
 
 
+
+
+
+
+
+
+       function cl1() { showSection('intro'); }
+       function cl2() { showSection('regras'); }
+       function cl3() { showSection('doping'); }
+       function cl4() { showSection('casos'); }
+       function cl6() { showSection('Deteccão'); }
+       
+       function showSection(sectionId) {
+           document.querySelectorAll('.div').forEach(div => {
+               div.style.display = 'none';
+           });
+           document.getElementById(sectionId).style.display = 'block';
+       }
+       
+       const ctx = document.getElementById('meuGrafico').getContext('2d');
+       const meuGrafico = new Chart(ctx, {
+           type: 'pie',
+           data: {
+               labels: [
+                   'Agentes Anabólicos',
+                   'Estimulantes',
+                   'Glicocorticoides',
+                   'Moduladores Hormonais e Metabólicos',
+                   'Outros'
+               ],
+               datasets: [{
+                   label: 'Substâncias Usadas no Doping',
+                   data: [48, 15, 8, 5, 11],
+                   backgroundColor: [
+                       'rgba(255, 99, 132, 0.6)',
+                       'rgba(54, 162, 235, 0.6)',
+                       'rgba(255, 206, 86, 0.6)',
+                       'rgba(75, 192, 192, 0.6)',
+                       'rgba(153, 102, 255, 0.6)'
+                   ],
+                   borderColor: [
+                       'rgba(255, 99, 132, 1)',
+                       'rgba(54, 162, 235, 1)',
+                       'rgba(255, 206, 86, 1)',
+                       'rgba(75, 192, 192, 1)',
+                       'rgba(153, 102, 255, 1)'
+                   ],
+                   borderWidth: 1
+               }]
+           },
+           options: {
+               responsive: true,
+               plugins: {
+                   legend: {
+                       position: 'top',
+                       labels: {
+                           color: 'white',
+                           usePointStyle: true,
+                           pointStyle: 'rectRounded'
+                       }
+                   },
+                   tooltip: {
+                       backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                       titleColor: 'white',
+                       bodyColor: 'white',
+                       borderColor: 'white',
+                       borderWidth: 1
+                   }
+               }
+           }
+       });
+       
 

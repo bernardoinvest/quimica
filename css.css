@@ -332,3 +332,15 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+.chart-container {
+    width: 40%;
+    height: 90%;
+    margin: auto;
+    background: black;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    
+}
